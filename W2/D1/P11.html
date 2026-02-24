@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Itroduction</title>
+    <style>
+        .box{
+            /* width: 30%; */
+            background-color: aquamarine;
+            color: black;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            background-color: crimson;
+            padding: 20px;
+        }
+        @media  screen and (min-width:600px) {
+            .container{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
