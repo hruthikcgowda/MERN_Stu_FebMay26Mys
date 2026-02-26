@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal overlay</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Modal overlay positioning(fixed + inset-0)-->
+     <main class="max-w-4xl mx-auto p-6 space-y-8">
+        <section class="border rounded p-6 space-y-4">
+            <h2>Modal Demo</h2>
+            <div class="overflow-auto h-72 border rounded p-4">
+                <div class="space-y-3">
+                    <p>Content behind a Modal</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit omnis rem ipsa explicabo veritatis perferendis sequi rerum recusandae, nam magni aspernatur, maiores facere adipisci quod, quam facilis ad nemo!</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut eligendi tempora nihil quasi quo quia dolores accusamus adipisci, error inventore voluptatem illum, ipsum voluptate pariatur nostrum blanditiis sunt accusantium.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quos dolore quas hic reprehenderit dicta eius autem corporis et? Ut odit deserunt blanditiis commodi aliquid cupiditate excepturi at voluptate recusandae!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor assumenda debitis blanditiis molestiae nulla quisquam, aperiam culpa! Totam expedita earum facilis maiores deleniti ab temporibus rerum possimus exercitationem ducimus.</p>
+                </div>
+            </div>
+            <div class="fixed inset-0 border-dashed pointer-events-none">
+                <div class="absolute top-4 left-4 border rounded px-3 py-2">
+                    Overlay: fixed inset-0
+                </div>
+            </div>
+        </section>
+     </main>
+</body>
+</html>
