@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS:dynamic typing concatenation, type conversion, datatypes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <pre id="out">
+
+    </pre>    
+    <button id="runbtn" class="px-3 py-1 rounded-lg m-2 border bg-gray-700 text-white">Run</button>
+ 
+    <script>
+        const out =document.getElementById("out");
+        function print(...args){
+
+            console.log(...args);
+            out.textContent+=args.join("")+"\n";
+        }
+        function clearOut(){
+            out.textContent="";
+        }
+        function run(){
+            clearOut();
+            // dynamic typing concatenation, type conversion
+            let value = "10";
+            print("value = ",value, "Typeof=",typeof value);
+
+            value = 10;
+            print("value = ",value, "Typeof=",typeof value);
+            
+            print("'10'+5:","10"+5);
+            print("'10'-5:","10"-5); //numeric conversion
+            print("'10'==10: ","10"==10); //value checking
+            print("'10'===10: ","10"===10); //datatypes checking
+
+            // datatypes
+            const undefval = undefined;
+            const nullval = null;
+            print("undefval = ",typeof undefval);
+            print("nullval = ",nullval, "typeof:" ,typeof nullval);
+        }     
+        document.getElementById("runbtn").addEventListener("click",run);
+    </script>
+</body>
+</html>
