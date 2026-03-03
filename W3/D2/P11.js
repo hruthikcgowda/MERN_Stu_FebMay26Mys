@@ -1,4 +1,4 @@
-// Recursive function
+// Recursive Function
 // a function which call itself(repeating)
 
 function factorial(n){
