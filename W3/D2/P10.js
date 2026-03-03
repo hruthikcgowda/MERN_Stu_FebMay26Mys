@@ -1,4 +1,4 @@
-// Callback function
+// Callback Function
 // Is a function which is passed as an arguments
 // to another function
 
