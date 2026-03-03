@@ -1,6 +1,6 @@
 // Function declaration
 // function greet(name);
-// Function Declaration/defination
+// Function Declaration/  defination
 function greet(name){
     console.log("Hello, "+name+" !");
 }
