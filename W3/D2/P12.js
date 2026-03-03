@@ -1,4 +1,4 @@
-// Higher order function
+// Higher order Function
 // 1. function which takes another function as a parameter
 // or
 // 2. A Function returns another function
