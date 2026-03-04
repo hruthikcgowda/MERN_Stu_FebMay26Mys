@@ -12,6 +12,9 @@ console.log("Age",person["age"]);
 person.city = "Mysore";
 console.log("Person",person);
 
+person.gender = "Male";
+console.log(person);
+
 // modify
 person.age = 31;
 
