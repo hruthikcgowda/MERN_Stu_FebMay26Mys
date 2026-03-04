@@ -1,6 +1,6 @@
 // 1. step size
 for(let i=0;i<=10;i+=3){
-    // console.log("i =",i);
+    console.log("i =",i);
 }
 
 //1. two counters in one for loop
