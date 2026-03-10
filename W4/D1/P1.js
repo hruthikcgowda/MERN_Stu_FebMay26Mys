@@ -1,15 +1,15 @@
 // try catch basics
 
-const err1 = document.getElementById("error1");
-try{
-    console.log("Trying to access undefined variable");
-    console.log(notDefined);
-}
-catch(err){
-    console.log("Error caught",err.name,"-",err.message);
-    err1.innerHTML = "Trying to access undefined variable";
-}
-console.log("Program execution continues");
+// const err1 = document.getElementById("error1");
+// try{
+//     console.log("Trying to access undefined variable");
+//     console.log(notDefined);
+// }
+// catch(err){
+//     console.log("Error caught",err.name,"-",err.message);
+//     err1.innerHTML = "Trying to access undefined variable";
+// }
+// console.log("Program execution continues");
 
 
 // JSON parsing error
@@ -19,7 +19,7 @@ console.log("Program execution continues");
         console.log(data);
      }
      catch(err){
-        console.log(":JSON parse eeror:",err.message);
+        console.log(":JSON parse error:",err.message);
      }
 try{
       let num=10;
