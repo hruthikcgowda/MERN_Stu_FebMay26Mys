@@ -8,15 +8,15 @@ function projectSearch(data = projectsData) {
     projectsContainer.innerHTML = "";
     
     data.forEach(function(project){
-        const card = document.createElement("div");
-        card.className = "p-8 text-center bg-white rounded-3xl shadow-lg";
+        const code = document.createElement("div");
+        code.className = "p-8 text-center bg-white rounded-3xl shadow-lg";
 
         const iconBox = document.createElement("div");
         iconBox.className = "w-20 h-20 mx-auto mb-4 bg-green-900 rounded-2xl flex items-center justify-center";
 
         const iconData = document.createElement("span");
         iconData.className = "text-2xl text-white font-bold";
-        iconData.textContent = project.status; 
+        iconData.textContent = project.status; // Show status in the box
         
         iconBox.appendChild(iconData);
 
@@ -30,29 +30,31 @@ function projectSearch(data = projectsData) {
     
         const projectTechnologies = document.createElement("p");
         projectTechnologies.className = "text-sm font-bold text-green-800";
-        
+        // .join converts the technology array into a string
         projectTechnologies.textContent = project.technologies.join(", ");
 
-        card.appendChild(iconBox);
-        card.appendChild(projectName);
-        card.appendChild(projectDescription);
-        card.appendChild(projectTechnologies);
-        projectsContainer.appendChild(card);
+        code.appendChild(iconBox);
+        code.appendChild(projectName);
+        code.appendChild(projectDescription);
+        code.appendChild(projectTechnologies);
+        projectsContainer.appendChild(code);
     });
 }
 
-// Searching
-const searchBar = document.getElementById("projects-container");
+// SEARCH BAR LOGIC
+const searchInput = document.getElementById("project-search");
 
-searchBar.addEventListener("input", (e) => {
+searchInput.addEventListener("input", (e) => {
     const term = e.target.value.toLowerCase();
     
-    const filter = projectsData.filter(project => {
+    const filtered = projectsData.filter(project => {
         return project.name.toLowerCase().includes(term) || 
                project.category.toLowerCase().includes(term) ||
                project.technologies.some(t => t.toLowerCase().includes(term));
     });
-    projectSearch(filter); 
+
+    projectSearch(filtered); // Re-run display with filtered data
 });
 
+// Initial Load
 document.addEventListener("DOMContentLoaded", () => projectSearch());
