@@ -1,0 +1,17 @@
+// introduction to node.js
+
+// const runtimeName = "Node.js";
+// console.log("Introduction to node.js");
+// console.log(`${runtimeName} runs javascript outside the browser`);
+
+const commonUses = [
+    "used for server-side app",
+    "automation script can be created"
+];
+
+// array desctructuring
+// console.log(commonUses[0]);
+// console.log(commonUses[1]);
+commonUses.forEach((commonUse,index) =>{
+    console.log(`$(index+1).${commonUse}`);
+})
