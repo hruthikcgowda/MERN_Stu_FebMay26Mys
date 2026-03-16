@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded",function(){
     initModal();
     initContactValidation();
     initThemeToggle();
-    renderProject();
+    projectSearch();
 })
