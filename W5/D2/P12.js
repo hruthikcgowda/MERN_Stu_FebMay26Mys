@@ -5,7 +5,7 @@ function validatelogin(){
             resolve("Login validation");
         },400);
     });
-}  
+}
 function fetchAccountdata(){
     return new Promise(function(resolve,reject){
         setTimeout(function(){
