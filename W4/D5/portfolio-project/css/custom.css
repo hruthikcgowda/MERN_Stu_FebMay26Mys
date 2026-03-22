@@ -23,3 +23,21 @@
 .dark-mode .text-gray-700{
     color: white;
 }
+
+/* mini game feature */
+.card {
+    width: 80px;
+    height: 80px;
+    background: #2563eb;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card.flipped {
+    background: #16a34a;
+}
